@@ -1,0 +1,25 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+.header {
+  height: 50px;
+  background: #39566d;
+}
+.header-info-wrapper {
+  display: flex;
+}
+.header-info-wrapper a {
+  color: #e3e3e3;
+  padding: 10px;
+}
+.logo {
+  padding: 7px;
+  color: #e3e3e3;
+}
