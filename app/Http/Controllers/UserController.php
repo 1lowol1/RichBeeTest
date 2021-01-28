@@ -16,7 +16,7 @@ class UserController extends Controller
       $validateFields = $request->validate([
         'userName' => ['required','min:2','max:255', $not_regex],
         'email'    => ['required','min:2','max:255', 'email', $not_regex],
-        'password' => ['required','min:6','max:255', 'password', $not_regex]
+        'password' => ['required','min:6','max:255', $not_regex]
       ]);
 
       if(User::where('email', $validateFields['email'])->exists()) {
